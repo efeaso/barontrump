@@ -1,0 +1,191 @@
+/* Font imports */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"); /* Similar to Imperial */
+@import url("https://fonts.googleapis.com/css2?family=Georgia&display=swap");
+
+/* Reset styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, serif;
+  line-height: 1.6;
+  background-color: white;
+}
+
+/* Navbar styles */
+.navbar {
+  width: 100%;
+  background-color: white;
+  color: black;
+  padding: 5px 0; /* Reduced padding */
+  border-bottom: 1px solid #333;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px; /* Reduced padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 42px; /* Fixed height for NYT-style navbar */
+}
+
+.logo h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px; /* Reduced gap */
+  font-size: 0.875rem; /* Smaller font size */
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  font-family: Arial, sans-serif; /* NYT uses a sans-serif for nav */
+  padding: 5px 0; /* Reduced padding */
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Container styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: white;
+}
+
+/* Header styles */
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.logo-img {
+  height: 20px;
+}
+
+.twitter {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.header h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-style: italic;
+}
+
+.fisher {
+  height: 100px;
+}
+
+.subtitle {
+  font-family: Georgia, serif;
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* Article styles */
+.article {
+  margin-bottom: 40px;
+}
+
+.article h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.article p {
+  font-family: Georgia, serif;
+  font-size: 1.1em;
+  line-height: 1.7;
+  color: #333;
+}
+
+.article blockquote {
+  font-family: Georgia, serif;
+  font-size: 1.2em;
+  font-style: italic;
+  margin: 30px 0;
+  padding-left: 20px;
+  border-left: 4px solid #333;
+  color: #444;
+}
+
+/* Metadata styles */
+.metadata {
+  font-family: Arial, sans-serif;
+  font-size: 0.9em;
+  color: #666;
+  margin: 15px 0;
+}
+
+/* Image styles */
+.article img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+/* Button styles */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000;
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Footer styles */
+.footer {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+  color: #333;
+  margin-top: 60px;
+  font-family: Arial, sans-serif;
+}
+
+.footer a {
+  color: #333;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .header h1 {
+    font-size: 2em;
+  }
+}
